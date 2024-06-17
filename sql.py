@@ -19,7 +19,7 @@ cursor.execute("""insert into student values("shraddha", "5","d",96)""")
 cursor.execute("""Insert into student values("yash","4","a",99)""")
 cursor.execute("""insert into student values("harsh","8","f",44)""")
 
-data=cursor.execute("""select * from student""")
+data=cursor.execute("""SELECT * FROM STUDENT WHERE MARKS > 90""")
 
 for r in data:
     print(r)
